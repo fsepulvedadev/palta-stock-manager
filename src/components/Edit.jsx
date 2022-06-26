@@ -8,8 +8,8 @@ import {
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import paltaLogo from "../assets/logo.svg";
 import Alert from "./Alert";
+import paltaLogo from "../assets/logo.svg";
 
 const Edit = () => {
   const [item, setItem] = useState(null);

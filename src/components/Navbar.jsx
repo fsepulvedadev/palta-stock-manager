@@ -57,7 +57,7 @@ const Navbar = () => {
           !navOpen ? `translate-x-full` : ``
         } flex flex-col w-full h-screen justify-start bg-green-900 md:hidden duration-300`}
       >
-        <div className="h-full">
+        <div className="h-[80vh]">
           <div
             onClick={() => {
               setNavOpen(false);
@@ -66,16 +66,32 @@ const Navbar = () => {
           >
             <ion-icon size="large" name="close-outline"></ion-icon>
           </div>
-          <img src={paltaLogo} alt="paltaLogo" />
+          <img
+            src={paltaLogo}
+            alt="paltaLogo"
+            className="absolute w-1/6 top-2 left-2"
+          />
           <div className="flex justify-center mt-3 text-3xl text-white">
             <h1 className="my-3">Palta Stock</h1>
           </div>
           <hr />
-          <ul className="flex flex-col justify-between mt-10 text-2xl text-center text-white h-1/6 ">
-            <li className="py-4 hover:bg-green-700 checked:animate-ping">
+          <ul className="flex flex-col justify-between mt-10 text-2xl text-center text-white">
+            <li
+              onClick={() => {
+                navigate("/");
+                setNavOpen(false);
+              }}
+              className="py-4 hover:bg-green-700 checked:animate-ping"
+            >
               Inicio
             </li>
-            <li className="py-4 hover:bg-green-700 target:animate-ping">
+            <li
+              onClick={() => {
+                navigate("/create");
+                setNavOpen(false);
+              }}
+              className="py-4 hover:bg-green-700 target:animate-ping"
+            >
               Agregar Producto
             </li>
           </ul>

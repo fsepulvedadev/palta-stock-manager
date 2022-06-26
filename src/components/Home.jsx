@@ -9,7 +9,7 @@ const Home = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen w-100">
-        <img src={paltaLogo} alt="Palta Logo" className="w-52 animate-spin" />
+        <img src={paltaLogo} alt="Palta Logo" className="w-1/6 animate-spin" />
       </div>
     );
   } else {
