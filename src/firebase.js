@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBehCjkRmePqVnqXnYhZXct70apNWf0b34",
-  authDomain: "palta-store.firebaseapp.com",
-  projectId: "palta-store",
-  storageBucket: "palta-store.appspot.com",
-  messagingSenderId: "1040224194570",
-  appId: "1:1040224194570:web:b5325b0d6cac9dac6c0ff3",
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
