@@ -1,0 +1,7 @@
+.palta-select-animation {
+  transition: all 0.3s ease-in-out;
+}
+
+.palta-select-animation:hover {
+  transform: scale(1.05);
+}
